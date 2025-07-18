@@ -1,11 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IMCreative - Your Creative Partner</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <h1>IMCreative</h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#Profile">Our Profile</a></li>
+        <li><a href="#contact">Message Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Banner -->
+  <section id="home" class="banner">
+    <div class="banner-text">
+      <h2>Welcome to IMCreative</h2>
+      <p>Your trusted partner in creative digital solutions</p>
+      <p id="welcome"></p>
+      <br><br>
+      <img src="images/banner.jpg.avif" alt="banner images">
+    </div>
+  </section>
+
+  <!-- Profile -->
+  <section id="Profile" class="profile-section">
+    <div class="container">
+      <h2 class="section-title">Our Profile</h2>
+      <p class="intro-text">We are IMCreative, a digital agency specializing in branding, UI/UX design, and web development.</p>
+      <div class="vision-mission">
+        <div class="vision">
+          <h3><i class="fas fa-bullseye"></i> Visi</h3>
+          <p>To become the leading creative digital agency in Southeast Asia.</p>
+        </div>
+
+        <div class="divider"><i class="fas fa-star"></i></div>
+
+        <div class="mission">
+          <h3><i class="fas fa-check-circle"></i> Misi</h3>
+          <ul>
+            <li>Deliver impactful digital products.</li>
+            <li>Empower brands through design and technology.</li>
+            <li>Provide excellent customer experience.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section id="contact" class="contact">
+    <h2 class="section-title">📬 Message Us</h2>
+    <p class="intro-text">Got a question or want to work with us? We'd love to hear from you!</p>
+
+    <form id="contactForm">
+      <div class="form-group">
+        <label for="name">👤 Name:</label>
+        <input type="text" id="name" required />
+      </div>
+
+      <div class="form-group">
+        <label for="email">📧 Email:</label>
+        <input type="email" id="email" required />
+      </div>
+
+      <div class="form-group">
+        <label for="phone">📞 Phone:</label>
+        <input type="tel" id="phone" required />
+      </div>
+
+      <div class="form-group">
+        <label for="message">💬 Message:</label>
+        <textarea id="message" required></textarea>
+      </div>
+
+      <button type="submit">🚀 Submit</button>
+    </form>
+    <div id="formResult" class="form-popup">Your message has been sent!</div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>&copy; 2025 IMCreative. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
